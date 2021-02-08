@@ -202,14 +202,4 @@ When you .pack() a widget into a window,
 Tkinter sizes the window as small as it can while still fully encompassing the widget. 
 '''
 
-
-### this is the resizing part
-f = r'/Users/simonjakobsson//Desktop/photo practice 10 automated downloads'
-for file in os.listdir(f):  # By using os.listdir() function you can read all the file names in a directory.
-    f_img = f + "/" + file
-    img = Image.open(f_img)
-    img = img.resize((image_height, image_width))
-    img.save(f_img)
-print("ok I think that worked?")
-
 window.mainloop()
